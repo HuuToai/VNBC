@@ -1,0 +1,734 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/* -----------------------------------------------------------------------------
+General
+----------------------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Manrope:wght@200..800&display=swap');
+
+html,
+body {
+ font-family: 'Yu Gothic','Roboto', sans-serif;
+
+ font-weight: normal;
+ font-size: 16px;
+ color: #003873;
+}
+
+main {
+ min-height: calc(100vh - 335px);
+}
+body {
+
+}
+
+
+*::-webkit-scrollbar-track {
+ background-color: #fff;
+}
+
+*::-webkit-scrollbar {
+ width: 3px;
+ height: 3px;
+ background-color: #fff;
+}
+
+*::-webkit-scrollbar-thumb {
+ background-color: #003873;
+}
+a {
+ text-decoration: none;
+}
+
+svg,
+img {
+ max-width: 100%;
+ height: auto;
+}
+
+.row-no-gutter {
+ margin: 0;
+}
+
+.row-no-gutter > * {
+ padding: 0;
+}
+.row-small-gutter {
+ margin-left: -7.5px;
+ margin-right: -7.5px;
+}
+
+.row-small-gutter > * {
+ padding-left: 7.5px;
+ padding-right: 7.5px;
+}
+@media (min-width: 992px) {
+
+ .row-medium-gutter {
+  margin-left: -25px;
+  margin-right: -25px;
+ }
+
+ .row-medium-gutter > * {
+  padding-left: 25px;
+  padding-right: 25px;
+ }
+
+ .row-large-gutter {
+  margin-left: -50px;
+  margin-right: -50px;
+ }
+
+ .row-large-gutter > * {
+  padding-left: 50px;
+  padding-right: 50px;
+ }
+
+}
+.dropdown-menu {
+ min-width: initial
+}
+
+.bg-dark {
+ background-color: #022D4D !important
+}
+
+
+
+.text-justify {
+ text-align: justify;
+}
+
+.text-12 {
+ font-size: 12px !important
+}
+.text-14 {
+ font-size: 14px !important
+}
+.text-16 {
+ font-size: 16px !important
+}
+.text-18 {
+ font-size: 18px !important
+}
+.text-20 {
+ font-size: 20px !important
+}
+.text-24 {
+ font-size: 24px !important
+}
+.text-30 {
+ font-size: 30px !important
+}
+.up {
+ color: #1fb69f;
+}
+.down {
+ color: #e64b60;
+}
+
+.f400 {
+ font-weight: 400 !important
+}
+.text-amz {
+ color: #fe9900 !important
+}
+
+.text-red {
+ color: red !important
+}
+
+.text-black {
+ color: #000 !important;;
+}
+.text-white {
+ color: #fff !important;;
+}
+
+.text-secondary {
+ color: #d2d2d2 !important;
+}
+
+.text-gray {
+ color: #828282 !important
+}
+
+.text-golden {
+ color: #F1A900 !important
+}
+.text-caseinitial {
+ text-transform: initial !important;
+}
+
+.text-uppercase {
+ text-transform: uppercase !important;
+}
+
+.bg-secondary {
+ background-color: #F7F7F7 !important
+}
+
+.btn {
+ -webkit-box-shadow: none !important;
+         box-shadow: none !important;
+}
+
+.btn.btn-outline-primary {
+ padding: 10px 26px;
+ color: #fff;
+ border-color: rgb(27, 75, 176);
+
+ font-weight: 500;
+ border-radius: 8px;
+}
+
+.btn.btn-primary {
+ padding: 10px 26px;
+ background-color: rgb(27, 75, 176);
+ border-color: rgb(27, 75, 176);
+
+ font-weight: 500;
+ border-radius: 8px;
+}
+.btn.btn-primary:hover {
+ background-color: #0d6efd;
+}
+
+.btn.btn-amz {
+ padding: 0;
+ min-width: 225px;
+ color: #fff;
+ line-height: 55px;
+
+ border-radius: 6px;
+ background: -webkit-gradient(linear, left top, left bottom, from(#ffba53), to(#f97d12));
+ background: -o-linear-gradient(#ffba53 0%, #f97d12 100%);
+ background: linear-gradient(#ffba53 0%, #f97d12 100%);
+
+ padding: 0;
+
+
+ font-weight: 500;
+ font-size: 24px;
+ text-align: center;
+ border: 0px solid transparent;
+
+}
+
+.btn.btn-amz.secondary {
+  background: -webkit-gradient(linear, left top, left bottom, from(#dfdfdf), to(#a6a6a6));
+  background: -o-linear-gradient(#dfdfdf 0%, #a6a6a6 100%);
+  background: linear-gradient(#dfdfdf 0%, #a6a6a6 100%);
+
+}
+.btn.btn-amz.small {
+ min-width: 125px;
+ line-height: 40px;
+ font-size: 16px;
+}
+.btn.btn-amz img {
+ height: 32px;
+}
+
+.videoWrapper {
+ position: relative;
+ padding-bottom: 56.25%; /* 16:9 */
+ height: 0;
+}
+.videoWrapper iframe {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+}
+.h-initial {
+ height: initial !important
+}
+
+/* -----------------------------------------------------------------------------
+Header
+----------------------------------------------------------------------------- */
+
+
+nav.navbar {
+padding: 0;
+-webkit-transition: all 0.5s;
+-o-transition: all 0.5s;
+transition: all 0.5s;
+top: 0;
+
+min-height: 70px;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+}
+
+.navbar-nav {
+gap: 15px 80px 
+}
+
+.navbar-nav .nav-link  {
+
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 22px;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+text-transform: uppercase;
+/* #111111 */
+color: #111111;
+
+padding: 0;
+}
+.navbar-toggler {
+border: 0px solid transparent;
+padding: 0;
+-webkit-box-shadow: none !important;
+        box-shadow: none !important;
+}
+/* -----------------------------------------------------------------------------
+Footer
+----------------------------------------------------------------------------- */
+footer {
+    background-color: #111;
+    /* © 2020 Copyright, Al */
+
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 26px;
+/* identical to box height, or 200% */
+letter-spacing: -0.1px;
+
+/* #FFFFFF */
+color: #FFFFFF;
+
+
+}
+
+
+/* -----------------------------------------------------------------------------
+Body
+----------------------------------------------------------------------------- */
+.SectionTitle {
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 64px;
+text-transform: uppercase;
+color: #000000;
+text-align: center;
+}
+
+
+#homesection01 {
+    background-image: url(./img/home/homesection1_bg.png);
+    background-position: center;
+    background-size: cover;
+    height: 675px;
+    max-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+#homesection01 .thetext{
+text-align: center;
+
+/* For a connected world, we connect business with business, people with people */
+
+
+font-family: "Manrope", sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 45px;
+line-height: 63px;
+text-align: center;
+
+color: #FFFFFF;
+
+margin-bottom: 60px;
+}
+
+#homesection01 .btn {
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+
+text-align: center;
+
+color: #FFFFFF;
+
+width: 242.02px;
+height: 50px;
+left: calc(50% - 242.02px/2);
+top: 483.4px;
+
+background: #89231C;
+/* #89231C */
+border: 1px solid #89231C;
+border-radius: 30px;
+
+display: -webkit-box;
+
+display: -ms-flexbox;
+
+display: flex;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+margin: auto;
+-webkit-transition: all 0.5s;
+-o-transition: all 0.5s;
+transition: all 0.5s;
+}
+#homesection01 .btn:hover {
+    background: #FF0000;
+/* #89231C */
+border: 1px solid #FF0000;
+}
+
+#aboutus {
+    background-color: #ECEEF3;
+    background-position: center;
+    background-attachment: fixed;
+}
+#aboutus .SectionTitle {
+    color: #333;
+}
+
+#aboutus .thetext {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 38px;
+    text-align: center;
+    color: #414141;
+}
+#aboutus .sub-title {
+    color: #89231C;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 38px;
+    text-align: center;
+}
+#homesection02 .title-company-profile {
+    color: #424242;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+#homesection02 .content-company-profile {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #424242;
+}
+
+#homesection03 {
+    background-image: url(./img/home/homesection03bg.jpg);
+    background-position: center;
+    /* background-size: cover; */
+    background-attachment: fixed;
+}
+#homesection03 .SectionTitle {
+    color: #fff;
+    margin-bottom: 32px;
+}
+
+#homesection03 .thetext {
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 38px;
+text-align: center;
+
+color: #FFFFFF;
+
+
+}
+
+
+#homesection05 .bgcontainer{
+    background-image: url(./img/home/homesection05bg.png);
+    background-position: center;
+    background-size: cover;
+
+}
+#homesection05 {
+    text-align: center;
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 29px;
+
+text-transform: uppercase;
+
+color: #000000;
+
+
+}
+#homesection05 .btncontainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /* gap: 28px; */
+}
+#homesection05 .btn {
+    -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+            transform: scale(0.9);
+}
+#homesection05 .btn.btn-1 {
+
+    
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1;
+    /* identical to box height, or 198% */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    
+    /* #FFFFFF */
+    color: #FFFFFF;
+    
+    gap: 5px 10px;
+    
+    padding: 16px 32px;
+    
+    width: 318px;
+    height: 80px;
+border-radius: 0;
+    background: #111;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+#homesection05 .btn.btn-1 span:last-child {
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+
+
+}
+#homesection05 .btn.btn-2 {
+
+
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 1;
+/* identical to box height, or 198% */
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+text-align: center;
+
+/* #FFFFFF */
+color: #FFFFFF;
+
+gap: 10px;
+
+padding: 16px 32px;
+
+border-radius: 0;
+width: 318px;
+height: 80px;
+
+/* #89231C */
+background: #89231C;
+
+}
+
+
+#homesection06 .btn {
+    -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+            transform: scale(0.9);
+    -webkit-transform-origin: top left;
+        -ms-transform-origin: top left;
+            transform-origin: top left;
+    
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1;
+    /* identical to box height, or 198% */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    
+    /* #FFFFFF */
+    color: #000;
+    
+    gap: 10px;
+    
+    padding: 9px 20px;
+    
+    border-radius: 0;
+    width: 251px;
+    height: 60px;
+    border: 2px solid #111;
+}
+#homesection06 .textwrapper {
+
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 18px;
+
+/* #111111 */
+color: #111111;
+
+max-width: 457px;
+margin: auto;
+}
+
+#homesection06 .textwrapper strong {
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 32px;
+
+color: #000000;
+
+}
+
+#homesection06 .textwrapper p {
+    margin-bottom: 24px;
+}
+#homesection06 .sec6logo {
+    position: absolute;
+    right: 0;
+    top: -50px;
+
+}
+
+#homesection04 .textWrapper {
+
+
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.5;
+
+color: #000000;
+
+
+border-bottom: 1px solid #89231C;
+}
+#homesection04 .cell span {
+
+    min-height: 55px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    
+border-top: 1px solid #ddd;
+
+min-height: 55px;
+
+}
+#homesection04 .label span {
+width: 175px;
+max-width: 100%;
+border-top: 1px solid #89231C;
+}
+
+
+#homesection04 .cell.label {
+    max-width: 230px;
+}
+
+/* -----------------------------------------------------------------------------
+Mobile
+----------------------------------------------------------------------------- */
+header {
+    position: sticky;
+    top: 0;
+    -webkit-box-shadow: 1px 1px 1px #ddd;
+            box-shadow: 1px 1px 1px #ddd;
+}
+@media(max-width: 767px) {
+    .navbar-nav .nav-link {
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+        padding: 10px 0;
+    }
+    #homesection01 .thetext {
+        font-size: 32px;
+        line-height: 1.5;
+    }
+    .SectionTitle {
+        font-size: 32px;
+        
+        line-height: 1.5;
+    }
+    #homesection03 .thetext {
+        font-size: 19px;
+    }
+    #homesection04 .cell.label {
+        max-width: 150px;
+    }
+}
