@@ -98,7 +98,45 @@ img {
  background-color: #022D4D !important
 }
 
+/* slider */
+#customer-feedback {
+    text-align: center;
+}
 
+.feedback {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.customer {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.customer img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    .customer {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .customer {
+        width: 100%;
+    }
+}
+/* slider */
 
 .text-justify {
  text-align: justify;
@@ -278,6 +316,23 @@ display: flex;
 .navbar-nav {
 gap: 15px 80px 
 }
+.nav-link1{
+    font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 22px;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+text-transform: uppercase;
+/* #111111 */
+color: #111111;
+
+padding: 0;
+}
 
 .navbar-nav .nav-link  {
 
@@ -339,7 +394,7 @@ text-align: center;
 
 
 #homesection01 {
-    background-image: url(./img/home/homesection1_bg.png);
+    background-image: url(./img/home/homesection1_bg.webp);
     background-position: center;
     background-size: cover;
     height: 675px;
@@ -456,7 +511,7 @@ border: 1px solid #FF0000;
 }
 
 #homesection03 {
-    background-image: url(./img/home/homesection03bg.jpg);
+    background-image: url(./img/home/homesection03bg.webp);
     background-position: center;
     /* background-size: cover; */
     background-attachment: fixed;
@@ -480,7 +535,7 @@ color: #FFFFFF;
 
 
 #homesection05 .bgcontainer{
-    background-image: url(./img/home/homesection05bg.png);
+    background-image: url(./img/home/homesection05bg.webp);
     background-position: center;
     background-size: cover;
 
@@ -591,6 +646,14 @@ height: 80px;
 /* #89231C */
 background: #89231C;
 
+}
+
+
+/* css map homesection06  */
+.map-iframe {
+    height: 460px;
+    width: 100%;
+    border: none;
 }
 
 
@@ -710,7 +773,13 @@ header {
             box-shadow: 1px 1px 1px #ddd;
 }
 @media(max-width: 767px) {
-    .navbar-nav .nav-link {
+    .nav-link1{
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+        padding: 10px 0;
+    }
+    .navbar-nav .nav-link  {
         -webkit-box-pack: end;
             -ms-flex-pack: end;
                 justify-content: flex-end;
@@ -731,4 +800,6 @@ header {
     #homesection04 .cell.label {
         max-width: 150px;
     }
+
+
 }

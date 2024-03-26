@@ -1,439 +1,520 @@
-
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="ja">
+<!-- ngôn ngữ japan -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VNBC Homepage</title>
+<!-- Thêm thẻ meta mô tả -->
+<meta name="description"
+    content="Hiệp hội xúc tiến Business Việt Nhật là tổ chức hỗ trợ doanh nghiệp, tạo cơ hội kinh doanh và giao lưu giữa Việt Nam và Nhật Bản. Tìm kiếm về các hoạt động kinh doanh, hợp tác và đầu tư tại hai quốc gia.">
+<meta name="robots" content="index, follow">
+
+<title>Hiệp hội xúc tiến Business Việt Nhật</title>
 <!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 <!-- FontAwesome 5 -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
 
 
 <link rel="stylesheet" href="./assets/custom.css">
+<script src="./assets/custom.js" defer></script>
+
+<!-- Schema.org markup -->
+<script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "name": "株式会社VN BC",
+      "url": "http://yourwebsite.com",
+      "logo": "http://yourwebsite.com/assets/img/logo.webp",
+      "description": "Hiệp hội xúc tiến Business Việt Nhật là tổ chức hỗ trợ doanh nghiệp, tạo cơ hội kinh doanh và giao lưu giữa Việt Nam và Nhật Bản. Tìm kiếm về các hoạt động kinh doanh, hợp tác và đầu tư tại hai quốc gia.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "〒1O4-OO61 東京都中央区銀座7丁目5-4毛利凶レ5階",
+        "addressLocality": "Tokyo",
+        "addressRegion": "Chuo",
+        "postalCode": "104-0061",
+        "addressCountry": "Japan"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+81-495-71-7928",
+        "contactType": "Customer service"
+      }
+    }
+    </script>
 </head>
 
 <body>
 
-<header>
-    <nav class="navbar navbar-expand-md navbar-light bg-light"> 
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <div class="container">
+                <a href="/" class="navbar-brand">
+                    <img src="./assets/img/logo.webp" alt="Logo VNBC" loading="lazy">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <!-- <li class="nav-item"><a href="/" class="nav-link active" aria-current="page">ホーム</a></li> -->
+                        <li><a href="/" class="nav-link1 active">
+                                ホーム
+                            </a></li>
+                        <li class="nav-item"><a href="/company-profile" class="nav-link">会社概要</a></li>
+                        <li class="nav-item"><a href="/company-detail" class="nav-link">事業内容</a></li>
+                        <li class="nav-item"><a href="/" class="nav-link">問い合わせ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <section id="homesection01">
+
         <div class="container">
-            <a href="/" class="navbar-brand"> 
-                <img src="./assets/img/logo.png" alt="Logo" > 
+
+            <div class="thetext">
+                For a connected world, <br>
+                we connect business <br>
+                with business, <br>
+                people with people
+            </div>
+
+            <a href="#contact" class="btn">
+                接触
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> 
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav"> 
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">ホーム</a></li>
-                    <li class="nav-item"><a href="#company-profile" class="nav-link">会社概要</a></li>
-                    <li class="nav-item"><a href="#company-detail" class="nav-link">事業内容</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">問い合わせ</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</header>
 
 
-<section id="homesection01">
-
-    <div class="container">
-
-        <div class="thetext">
-            For a connected world, <br>
-            we connect business <br>
-            with business, <br>
-            people with people
         </div>
 
-        <a href="#contact" class="btn">
-            接触
-        </a>
+    </section>
+    <section id="homesection02">
 
+        <div class="container py-5">
 
-    </div>
-
-</section>
-<section id="homesection02">
-
-    <div class="container py-5">
-
-        <h2 id="company-profile" class="SectionTitle">
-            会社概要
-        </h2>
-        <div class="row gx-0 align-items-center">
-            <div class="col-12 col-md-6 col-lg-7 order-1  order-md-3">
-                <img src="./assets/img/home/s1.png" alt="">
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-5 order-2">
-                <div class="p-4">
-                    <div class="title-company-profile py-3"> 人材派遣サービス</div>
-                    <p class="content-company-profile">
-                        株式会社VNBCは、優れた人材を提供し、お客様の企業の成長と成功に貢献する専門的な人材派遣サービスプロバイダーです。私たちは、一流のスキルと経験を持つ候補者を素早く、効果的に提供し、お客様のニーズに合わせた柔軟な雇用ソリューションを提供します。
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="row gx-0 align-items-center ">
-            <div class="col-12 col-md-6  col-lg-5">
-                <img src="./assets/img/home/s2.png" alt="">
-
-            </div>
-
-            <div class="col-12 col-md-6  col-lg-7 ">
-                <div class="p-4">
-                    <div class="title-company-profile py-3"> 私たちのサービスの特長</div>
-                    <p class="content-company-profile">
-                        優れた人材プール: 当社は多様な職種と業界での優れた人材プールを持っており、一時的なプロジェクトから長期のプランまで、幅広いニーズに対応します。<br>
-                        迅速な対応: 弊社は素早い対応が得意で、急な人材ニーズにも迅速に対処します。最適な候補者を素早く提供し、プロジェクトのスムーズな進行をサポートします。
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="row gx-0 align-items-center">
-            <div class="col-12 col-md-6  col-lg-7  order-1  order-md-3">
-                <img src="./assets/img/home/s3.png" alt="">
-
-            </div>
-
-            <div class="col-12 col-md-6  col-lg-5 order-2">
-                <div class="p-4">
-                    <div class="title-company-profile py-3"> 柔軟な雇用オプション</div>
-                    <p class="content-company-profile">
-                        お客様のニーズに合わせて、派遣社員、契約社員、臨時社員など、さまざまな雇用オプションを提供します。コスト管理に役立つ柔軟性を提供します。<br>
-                        コスト効率: 人材派遣は経済的で、労働者の給与、福利厚生、採用手続きにかかるコストを削減します。お客様の予算に合わせたソリューションを提供します。
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="row gx-0 align-items-center ">
-            <div class="col-12 col-md-6  col-lg-5">
-                <img src="./assets/img/home/s4.png" alt="">
-
-            </div>
-
-            <div class="col-12 col-md-6  col-lg-7 ">
-                <div class="p-4">
-                    <div class="title-company-profile py-3"> 法令順守</div>
-                    <p class="content-company-profile">
-                        弊社は日本の労働法や規制に厳密に準拠し、雇用関連の法的問題についても専門的なサポートを提供します。お客様のリスクを最小限に抑えます。<br>
-                        株式会社VNBCは、お客様のビジョンを理解し、必要な人材を提供する信頼性と専門知識を備えたパートナーとしてお役立てできることを誇りに思います。お気軽にご連絡いただき、人材派遣に関する詳細をお話しできることを楽しみにしております。
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="row gx-0 align-items-center ">
-            <div class="col-12 col-md-6  col-lg-5">
-                <div class="p-4">
-                    <p class="content-company-profile">
-                        私たちは、パーソナリティ心理学の知見をビジネス価値に繋げるコンサルティングを提供しています。科学的人材データに基づく洞察から戦略遂行の支援をします。個の内面にアプローチし、気づきや行動変容を促すことで、組織変革を強力に後押しします。
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-12 col-md-6  col-lg-7 ">
-                <div class="p-4">
-                    <p class="content-company-profile">
-                        経営戦略を実行するのは人材を置いて他にありません。私たちは、人と組織の意思決定を、人材データから得られる示唆を用いてサポートします。データの収集と分析、計画策定から現場変革まで、一気通貫で様々な課題解決の実績があります。現在の組織を成長させ、会社の未来を創り出す人材を発掘し、適材適所で価値創造を実現します。
-                    </p>
-                </div>
-            </div>
-        </div>
-
-
-    </div>
-
-</section>
-<section id="aboutus">
-    <div class="container py-5">
-        <h2 class="SectionTitle">
-            ABOUT US
-        </h2>
-        <div class="sub-title py-1">
-            日本で働いて将来永住権を取りたいと願う方を企業に紹介しております。
-        </div>
-        <div class="thetext">
-            私たちのビジョンは外国人との共生です。外国人を理解し、日本に来て<br>良かったと思える社会を作ることです。ダイバーシティ社会における<br>フォーサイトを実現できる企業として私たちは活動します。
-        </div>
-    </div>
-</section>
-<section id="homesection03">
-    <div class="container py-5">
-        <h2 class="SectionTitle">
-            OUR VISION
-        </h2>
-        <div class="thetext">
-            私たちのビジョンは外国人との共生です。外国人を理解し、日本に来て<br>良かったと思える社会を作ることです。ダイバーシティ社会における<br>フォーサイトを実現できる企業として私たちは活動します。
-        </div>
-    </div>
-</section>
-<section id="homesection04">
-    <div id="company-detail" class="container py-5">
-        <h2 class="SectionTitle">
-            事業内容
-        </h2>
-        <div class="textWrapper">
-
-            <div class="row gx-4">
-
-                <div class="col cell label">
-                    <span>
-                        会社名
-                    </span>
-                </div>
-                <div class="col cell info">
-                    <span>
-                        株式会社VN BC
-                    </span>
-                </div>
-
-            </div>
-
-            <div class="row gx-4">
-
-                <div class="col cell label">
-                    <span>
-                        執行役員 <br class="d-md-none">
-                        (就職支援担当）
-                    </span>
-                </div>
-                <div class="col cell info">
-                    <span>
-                        Nguyen Minh
-                    </span>
-                </div>
-
-            </div>
-            <div class="row gx-4">
-
-                <div class="col cell label">
-                    <span>
-                        住所
-                    </span>
-                </div>
-                <div class="col cell info">
-                    <span>
-
-                        〒1O4-OO61 <br>
-                        東京都中央区銀座7丁目5-4毛利凶レ5階
-                    </span>
-                </div>
-
-            </div>
-            <div class="row gx-4">
-
-                <div class="col cell label">
-                    <span>
-                        Tel
-                    </span>
-                </div>
-                <div class="col cell info">
-                    <span>
-                        +81-3-6274-6266
-                    </span>
-                </div>
-
-            </div>
-            <div class="row gx-4">
-
-                <div class="col cell label">
-                    <span>
-                        Fax
-                    </span>
-                </div>
-                <div class="col cell info">
-                    <span>
-                        +81-3-5860-0937
-                    </span>
-                </div>
-
-            </div>
-            <div class="row gx-4">
-
-                <div class="col cell label">
-                    <span>
-                        携帯
-                    </span>
-                </div>
-                <div class="col cell info">
-                    <span>
-                        070-3842-2563
-                    </span>
-                </div>
-
-            </div>
-            <div class="row gx-4">
-
-                <div class="col cell label">
-                    <span>
-                        E-mail
-                    </span>
-                </div>
-                <div class="col cell info">
-                    <span>
-                        minh.vnbc@gmail.com
-                    </span>
-                </div>
-
-            </div>
-            <div class="row gx-4">
-
-                <div class="col cell label">
-                    <span>
-                        埼玉営業所
-                    </span>
-                </div>
-                <div class="col cell info">
-                    <span>
-                        〒369-0317 <br>
-                        埼玉県児玉郡上里町大学五明807-2
-                    </span>
-                </div>
-
-            </div>
-            <div class="row gx-4">
-
-                <div class="col cell label">
-                    <span>
-                        TEL FAX
-                    </span>
-                </div>
-                <div class="col cell info">
-                    <span>
-
-                        +81-495-71-7928
-                    </span>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</section><section id="homesection05">
-    <div class="bgcontainer m-4">
-        <div id="contact" class="container py-5">
-            <h2 class="SectionTitle">
-                電話でお問い合わせ
+            <h2 id="company-profile" class="SectionTitle">
+                会社概要
             </h2>
-            <div class="text">
-                人材に関することならお気軽にお問い合わせください。
+            <div class="row gx-0 align-items-center">
+                <div class="col-12 col-md-6 col-lg-7 order-1  order-md-3">
+                    <img src="./assets/img/home/人材サービスの写真.webp" alt="人材サービスの写真" loading="lazy">
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-5 order-2">
+                    <div class="p-4">
+                        <div class="title-company-profile py-3"> 人材派遣サービス</div>
+                        <p class="content-company-profile">
+                            株式会社VNBCは、優れた人材を提供し、お客様の企業の成長と成功に貢献する専門的な人材派遣サービスプロバイダーです。私たちは、一流のスキルと経験を持つ候補者を素早く、効果的に提供し、お客様のニーズに合わせた柔軟な雇用ソリューションを提供します。
+                        </p>
+                    </div>
+                </div>
             </div>
 
-            <div class="mt-4 btncontainer">
+            <div class="row gx-0 align-items-center ">
+                <div class="col-12 col-md-6  col-lg-5">
+                    <img src="./assets/img/home/サービスの特徴を写真でご紹介.webp" alt="サービスの特徴を写真でご紹介" loading="lazy">
 
-                <button class="btn btn-1">
-                    <span>
-                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_10_2332)">
-                                <path d="M15.0547 17.9289C14.6703 17.1367 14.1734 16.5601 13.3156 16.9117L11.6234 17.5398C10.2688 18.1679 9.59376 17.5398 8.91407 16.5929L5.86719 9.66479C5.48282 8.87261 5.68438 8.1273 6.54219 7.77573L8.90938 6.82886C9.76719 6.47261 9.63126 5.73198 9.24688 4.9398L7.21719 1.16167C6.83282 0.369483 6.04532 0.177295 5.18751 0.528857C3.47657 1.23667 2.05157 2.34761 1.13282 3.99292C0.00781861 6.00386 0.570319 8.80229 0.795319 9.97886C1.02032 11.1554 1.80782 13.2179 2.82501 15.332C3.84219 17.4507 4.73282 19.1148 5.52969 20.057C6.32657 20.9992 8.23907 23.5773 10.6063 24.1539C12.5469 24.6226 14.6422 24.2289 16.3578 23.521C17.2203 23.1695 17.2203 22.4242 16.8359 21.6273L15.0547 17.9289ZM24.4625 9.58511H16.1516L19.8453 5.89136H17.075L12.4578 10.5085L17.075 15.1257H19.8453L16.1516 11.432H24.4625V9.58511Z" fill="white" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_10_2332">
-                                    <rect width="24" height="24" fill="white" transform="translate(0.5 0.360107)" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-                        &nbsp;
-                        +81-3-6274-6266
-                    </span>
-                    <span> 電話受付：9:00~18:00</span>
-                </button>
+                </div>
 
-                <button class="btn btn-2">
-                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_7_2010)">
-                            <path d="M21.5533 4.36011C21.4625 4.35074 21.3709 4.35074 21.28 4.36011H2.61333C2.49369 4.36195 2.37485 4.37989 2.26 4.41344L11.8933 14.0068L21.5533 4.36011Z" fill="white" />
-                            <path d="M22.54 5.28677L12.8333 14.9534C12.5835 15.2018 12.2456 15.3412 11.8933 15.3412C11.5411 15.3412 11.2032 15.2018 10.9533 14.9534L1.33333 5.36011C1.30376 5.4688 1.28808 5.5808 1.28667 5.69344V19.0268C1.28667 19.3804 1.42714 19.7195 1.67719 19.9696C1.92724 20.2196 2.26638 20.3601 2.62 20.3601H21.2867C21.6403 20.3601 21.9794 20.2196 22.2295 19.9696C22.4795 19.7195 22.62 19.3804 22.62 19.0268V5.69344C22.6147 5.55454 22.5877 5.41733 22.54 5.28677ZM3.53333 19.0268H2.60667V18.0734L7.45333 13.2668L8.39333 14.2068L3.53333 19.0268ZM21.2733 19.0268H20.34L15.48 14.2068L16.42 13.2668L21.2667 18.0734L21.2733 19.0268Z" fill="white" />
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_7_2010">
-                                <rect width="24" height="24" fill="white" transform="translate(0 0.360107)" />
-                            </clipPath>
-                        </defs>
-                    </svg>
+                <div class="col-12 col-md-6  col-lg-7 ">
+                    <div class="p-4">
+                        <div class="title-company-profile py-3"> 私たちのサービスの特長</div>
+                        <p class="content-company-profile">
+                            優れた人材プール: 当社は多様な職種と業界での優れた人材プールを持っており、一時的なプロジェクトから長期のプランまで、幅広いニーズに対応します。<br>
+                            迅速な対応: 弊社は素早い対応が得意で、急な人材ニーズにも迅速に対処します。最適な候補者を素早く提供し、プロジェクトのスムーズな進行をサポートします。
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-         
-                    minh.vnbc@gmail.com
+            <div class="row gx-0 align-items-center">
+                <div class="col-12 col-md-6  col-lg-7  order-1  order-md-3">
+                    <img src="./assets/img/home/柔軟な雇用オプションのイメージ.webp" alt="柔軟な雇用オプションのイメージ" loading="lazy">
 
-                </button>
+                </div>
 
+                <div class="col-12 col-md-6  col-lg-5 order-2">
+                    <div class="p-4">
+                        <div class="title-company-profile py-3"> 柔軟な雇用オプション</div>
+                        <p class="content-company-profile">
+                            お客様のニーズに合わせて、派遣社員、契約社員、臨時社員など、さまざまな雇用オプションを提供します。コスト管理に役立つ柔軟性を提供します。<br>
+                            コスト効率: 人材派遣は経済的で、労働者の給与、福利厚生、採用手続きにかかるコストを削減します。お客様の予算に合わせたソリューションを提供します。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row gx-0 align-items-center ">
+                <div class="col-12 col-md-6  col-lg-5">
+                    <img src="./assets/img/home/ルールに準拠した画像.webp" alt="ルールに準拠した画像" loading="lazy">
+
+                </div>
+
+                <div class="col-12 col-md-6  col-lg-7 ">
+                    <div class="p-4">
+                        <div class="title-company-profile py-3"> 法令順守</div>
+                        <p class="content-company-profile">
+                            弊社は日本の労働法や規制に厳密に準拠し、雇用関連の法的問題についても専門的なサポートを提供します。お客様のリスクを最小限に抑えます。<br>
+                            株式会社VNBCは、お客様のビジョンを理解し、必要な人材を提供する信頼性と専門知識を備えたパートナーとしてお役立てできることを誇りに思います。お気軽にご連絡いただき、人材派遣に関する詳細をお話しできることを楽しみにしております。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row gx-0 align-items-center ">
+                <div class="col-12 col-md-6  col-lg-5">
+                    <div class="p-4">
+                        <p class="content-company-profile">
+                            私たちは、パーソナリティ心理学の知見をビジネス価値に繋げるコンサルティングを提供しています。科学的人材データに基づく洞察から戦略遂行の支援をします。個の内面にアプローチし、気づきや行動変容を促すことで、組織変革を強力に後押しします。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6  col-lg-7 ">
+                    <div class="p-4">
+                        <p class="content-company-profile">
+                            経営戦略を実行するのは人材を置いて他にありません。私たちは、人と組織の意思決定を、人材データから得られる示唆を用いてサポートします。データの収集と分析、計画策定から現場変革まで、一気通貫で様々な課題解決の実績があります。現在の組織を成長させ、会社の未来を創り出す人材を発掘し、適材適所で価値創造を実現します。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+    <section id="aboutus">
+        <div class="container py-5">
+            <h2 class="SectionTitle">
+                ABOUT US
+            </h2>
+            <div class="sub-title py-1">
+                日本で働いて将来永住権を取りたいと願う方を企業に紹介しております。
+            </div>
+            <div class="thetext">
+                私たちのビジョンは外国人との共生です。外国人を理解し、日本に来て<br>良かったと思える社会を作ることです。ダイバーシティ社会における<br>フォーサイトを実現できる企業として私たちは活動します。
             </div>
         </div>
-    </div>
-</section>
-<section id="homesection06">
-
-    <div class="container-fluid">
-
-        <div class="row align-items-center">
-
-            <div class="col-12 col-md-6">
-
-                <iframe style="height:460px;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=+〒1O4-OO61+東京都中央区銀座7丁目5-4毛利凶レ5階&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+    </section>
+    <section id="homesection03">
+        <div class="container py-5">
+            <h2 class="SectionTitle">
+                OUR VISION
+            </h2>
+            <div class="thetext">
+                私たちのビジョンは外国人との共生です。外国人を理解し、日本に来て<br>良かったと思える社会を作ることです。ダイバーシティ社会における<br>フォーサイトを実現できる企業として私たちは活動します。
             </div>
+        </div>
+    </section>
+    <section id="homesection04">
+        <div id="company-detail" class="container py-5">
+            <h2 class="SectionTitle">
+                事業内容
+            </h2>
+            <div class="textWrapper">
 
-            <div class="col-12 col-md-6">
+                <div class="row gx-4">
 
-                <div class="m-5 textwrapper" style=" position: relative;">
-                <img class="sec6logo" src="./assets/img/home/sec6logo.png"  alt="">
-                    <strong>
-                        Nguyen Minh
-                    </strong>
-                    <p>
+                    <div class="col cell label">
+                        <span>
+                            会社名
+                        </span>
+                    </div>
+                    <div class="col cell info">
+                        <span>
+                            株式会社VN BC
+                        </span>
+                    </div>
 
-                        執行役員（就職支援担当）
-                    </p>
+                </div>
 
-                    <p>
-                        〒1O4-OO61 <br>
-                        東京都中央区銀座7丁目5-4毛利凶レ5階
+                <div class="row gx-4">
 
-                    </p>
+                    <div class="col cell label">
+                        <span>
+                            執行役員 <br class="d-md-none">
+                            (就職支援担当）
+                        </span>
+                    </div>
+                    <div class="col cell info">
+                        <span>
+                            Nguyen Minh
+                        </span>
+                    </div>
 
-                    <button class="btn">
-                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_10_2353)">
-                                <path d="M15.515 17.8121C15.1306 17.0199 14.6338 16.4433 13.776 16.7949L12.0838 17.423C10.7291 18.0512 10.0541 17.423 9.3744 16.4762L6.32752 9.54803C5.94315 8.75584 6.14471 8.01053 7.00252 7.65897L9.36971 6.71209C10.2275 6.35584 10.0916 5.61522 9.70721 4.82303L7.67752 1.0449C7.29315 0.252717 6.50565 0.06053 5.64783 0.412092C3.9369 1.1199 2.5119 2.23084 1.59315 3.87616C0.468146 5.88709 1.03065 8.68553 1.25565 9.86209C1.48065 11.0387 2.26815 13.1012 3.28533 15.2152C4.30252 17.334 5.19315 18.998 5.99002 19.9402C6.7869 20.8824 8.6994 23.4605 11.0666 24.0371C13.0072 24.5058 15.1025 24.1121 16.8181 23.4043C17.6806 23.0527 17.6806 22.3074 17.2963 21.5105L15.515 17.8121ZM24.9228 9.46834H16.6119L20.3056 5.77459H17.5353L12.9181 10.3918L17.5353 15.009H20.3056L16.6119 11.3152H24.9228V9.46834Z" fill="#111111" />
+                </div>
+                <div class="row gx-4">
+
+                    <div class="col cell label">
+                        <span>
+                            住所
+                        </span>
+                    </div>
+                    <div class="col cell info">
+                        <span>
+
+                            〒1O4-OO61 <br>
+                            東京都中央区銀座7丁目5-4毛利凶レ5階
+                        </span>
+                    </div>
+
+                </div>
+                <div class="row gx-4">
+
+                    <div class="col cell label">
+                        <span>
+                            Tel
+                        </span>
+                    </div>
+                    <div class="col cell info">
+                        <span>
+                            +81-3-6274-6266
+                        </span>
+                    </div>
+
+                </div>
+                <div class="row gx-4">
+
+                    <div class="col cell label">
+                        <span>
+                            Fax
+                        </span>
+                    </div>
+                    <div class="col cell info">
+                        <span>
+                            +81-3-5860-0937
+                        </span>
+                    </div>
+
+                </div>
+                <div class="row gx-4">
+
+                    <div class="col cell label">
+                        <span>
+                            携帯
+                        </span>
+                    </div>
+                    <div class="col cell info">
+                        <span>
+                            070-3842-2563
+                        </span>
+                    </div>
+
+                </div>
+                <div class="row gx-4">
+
+                    <div class="col cell label">
+                        <span>
+                            E-mail
+                        </span>
+                    </div>
+                    <div class="col cell info">
+                        <span>
+                            minh.vnbc@gmail.com
+                        </span>
+                    </div>
+
+                </div>
+                <div class="row gx-4">
+
+                    <div class="col cell label">
+                        <span>
+                            埼玉営業所
+                        </span>
+                    </div>
+                    <div class="col cell info">
+                        <span>
+                            〒369-0317 <br>
+                            埼玉県児玉郡上里町大学五明807-2
+                        </span>
+                    </div>
+
+                </div>
+                <div class="row gx-4">
+
+                    <div class="col cell label">
+                        <span>
+                            TEL FAX
+                        </span>
+                    </div>
+                    <div class="col cell info">
+                        <span>
+
+                            +81-495-71-7928
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="homesection05">
+        <div class="bgcontainer m-4">
+            <div id="contact" class="container py-5">
+                <h2 class="SectionTitle">
+                    電話でお問い合わせ
+                </h2>
+                <div class="text">
+                    人材に関することならお気軽にお問い合わせください。
+                </div>
+
+                <div class="mt-4 btncontainer">
+
+                    <button class="btn btn-1">
+                        <span>
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_10_2332)">
+                                    <path
+                                        d="M15.0547 17.9289C14.6703 17.1367 14.1734 16.5601 13.3156 16.9117L11.6234 17.5398C10.2688 18.1679 9.59376 17.5398 8.91407 16.5929L5.86719 9.66479C5.48282 8.87261 5.68438 8.1273 6.54219 7.77573L8.90938 6.82886C9.76719 6.47261 9.63126 5.73198 9.24688 4.9398L7.21719 1.16167C6.83282 0.369483 6.04532 0.177295 5.18751 0.528857C3.47657 1.23667 2.05157 2.34761 1.13282 3.99292C0.00781861 6.00386 0.570319 8.80229 0.795319 9.97886C1.02032 11.1554 1.80782 13.2179 2.82501 15.332C3.84219 17.4507 4.73282 19.1148 5.52969 20.057C6.32657 20.9992 8.23907 23.5773 10.6063 24.1539C12.5469 24.6226 14.6422 24.2289 16.3578 23.521C17.2203 23.1695 17.2203 22.4242 16.8359 21.6273L15.0547 17.9289ZM24.4625 9.58511H16.1516L19.8453 5.89136H17.075L12.4578 10.5085L17.075 15.1257H19.8453L16.1516 11.432H24.4625V9.58511Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_10_2332">
+                                        <rect width="24" height="24" fill="white" transform="translate(0.5 0.360107)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            &nbsp;
+                            +81-3-6274-6266
+                        </span>
+                        <span> 電話受付：9:00~18:00</span>
+                    </button>
+
+                    <button class="btn btn-2">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_7_2010)">
+                                <path
+                                    d="M21.5533 4.36011C21.4625 4.35074 21.3709 4.35074 21.28 4.36011H2.61333C2.49369 4.36195 2.37485 4.37989 2.26 4.41344L11.8933 14.0068L21.5533 4.36011Z"
+                                    fill="white" />
+                                <path
+                                    d="M22.54 5.28677L12.8333 14.9534C12.5835 15.2018 12.2456 15.3412 11.8933 15.3412C11.5411 15.3412 11.2032 15.2018 10.9533 14.9534L1.33333 5.36011C1.30376 5.4688 1.28808 5.5808 1.28667 5.69344V19.0268C1.28667 19.3804 1.42714 19.7195 1.67719 19.9696C1.92724 20.2196 2.26638 20.3601 2.62 20.3601H21.2867C21.6403 20.3601 21.9794 20.2196 22.2295 19.9696C22.4795 19.7195 22.62 19.3804 22.62 19.0268V5.69344C22.6147 5.55454 22.5877 5.41733 22.54 5.28677ZM3.53333 19.0268H2.60667V18.0734L7.45333 13.2668L8.39333 14.2068L3.53333 19.0268ZM21.2733 19.0268H20.34L15.48 14.2068L16.42 13.2668L21.2667 18.0734L21.2733 19.0268Z"
+                                    fill="white" />
                             </g>
                             <defs>
-                                <clipPath id="clip0_10_2353">
-                                    <rect width="24" height="24" fill="white" transform="translate(0.960327 0.243347)" />
+                                <clipPath id="clip0_7_2010">
+                                    <rect width="24" height="24" fill="white" transform="translate(0 0.360107)" />
                                 </clipPath>
                             </defs>
                         </svg>
 
-                        +81-3-6274-6266
+
+                        minh.vnbc@gmail.com
 
                     </button>
 
                 </div>
-
             </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<footer>
-    <section class="container">
-        <div class="row  align-items-center">
-            <div class="col-12 col-md-6 my-3 text-center  text-md-start">
-                <img src="./assets/img/logofooter.png" alt="">
-            </div>
-            <div class="col-12 col-md-6  my-3 text-center text-md-end">
-                © 2024 Copyright, All Right Reserved
-            </div>
-
         </div>
     </section>
-</footer>
+
+    <section id="customer-feedback">
+        <h2>問い合わせ</h2>
+        <div class="feedback">
+            <div class="customer">
+                <img src="./assets/img/home/柔軟な雇用オプションのイメージ.webp" alt="Customer 1">
+                <h3>Khách hàng 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et ligula eget quam bibendum aliquet.
+                    Sed et libero eu metus semper rutrum. Nullam vel diam vitae ligula aliquet dictum.</p>
+            </div>
+            <div class="customer">
+                <img src="./assets/img/home/柔軟な雇用オプションのイメージ.webp" alt="Customer 2">
+                <h3>Khách hàng 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et ligula eget quam bibendum aliquet.
+                    Sed et libero eu metus semper rutrum. Nullam vel diam vitae ligula aliquet dictum.</p>
+            </div>
+            <div class="customer">
+                <img src="./assets/img/home/柔軟な雇用オプションのイメージ.webp" alt="Customer 3">
+                <h3>Khách hàng 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et ligula eget quam bibendum aliquet.
+                    Sed et libero eu metus semper rutrum. Nullam vel diam vitae ligula aliquet dictum.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="homesection06">
+
+        <div class="container-fluid">
+
+            <div class="row align-items-center">
+
+                <div class="col-12 col-md-6">
+                    <!-- sửa css style="height:460px;width:100%;border:0;" frameborder="0" -->
+                    <iframe class="map-iframe"
+                        src="https://www.google.com/maps/embed/v1/place?q=+〒1O4-OO61+東京都中央区銀座7丁目5-4毛利凶レ5階&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                        loading="lazy"></iframe>
+                    <!-- <iframe style="height:460px;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=+〒1O4-OO61+東京都中央区銀座7丁目5-4毛利凶レ5階&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe> -->
+                </div>
+
+                <div class="col-12 col-md-6">
+
+                    <div class="m-5 textwrapper" style=" position: relative;">
+                        <img class="sec6logo" src="./assets/img/home/sec6logo.webp" alt="logo VNBC" loading="lazy">
+                        <strong>
+                            Nguyen Minh
+                        </strong>
+                        <p>
+
+                            執行役員（就職支援担当）
+                        </p>
+
+                        <p>
+                            〒1O4-OO61 <br>
+                            東京都中央区銀座7丁目5-4毛利凶レ5階
+
+                        </p>
+
+                        <button class="btn">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_10_2353)">
+                                    <path
+                                        d="M15.515 17.8121C15.1306 17.0199 14.6338 16.4433 13.776 16.7949L12.0838 17.423C10.7291 18.0512 10.0541 17.423 9.3744 16.4762L6.32752 9.54803C5.94315 8.75584 6.14471 8.01053 7.00252 7.65897L9.36971 6.71209C10.2275 6.35584 10.0916 5.61522 9.70721 4.82303L7.67752 1.0449C7.29315 0.252717 6.50565 0.06053 5.64783 0.412092C3.9369 1.1199 2.5119 2.23084 1.59315 3.87616C0.468146 5.88709 1.03065 8.68553 1.25565 9.86209C1.48065 11.0387 2.26815 13.1012 3.28533 15.2152C4.30252 17.334 5.19315 18.998 5.99002 19.9402C6.7869 20.8824 8.6994 23.4605 11.0666 24.0371C13.0072 24.5058 15.1025 24.1121 16.8181 23.4043C17.6806 23.0527 17.6806 22.3074 17.2963 21.5105L15.515 17.8121ZM24.9228 9.46834H16.6119L20.3056 5.77459H17.5353L12.9181 10.3918L17.5353 15.009H20.3056L16.6119 11.3152H24.9228V9.46834Z"
+                                        fill="#111111" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_10_2353">
+                                        <rect width="24" height="24" fill="white"
+                                            transform="translate(0.960327 0.243347)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+                            +81-3-6274-6266
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <section class="container">
+            <div class="row  align-items-center">
+                <div class="col-12 col-md-6 my-3 text-center  text-md-start">
+                    <img src="./assets/img/logofooter.png" alt="" loading="lazy">
+                </div>
+                <div class="col-12 col-md-6  my-3 text-center text-md-end">
+                    © 2024 Copyright, All Right Reserved
+                </div>
+
+            </div>
+        </section>
+    </footer>
 
 </body>
 
